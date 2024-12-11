@@ -87,5 +87,47 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     display: none;
 }
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
 
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input, select, button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    input, select, button {
+        font-size: 0.9rem;
+    }
+
+    .unit-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .unit-section label,
+    .unit-section select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .output-section p {
+        font-size: 1.1rem;
+    }
+}
 
