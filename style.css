@@ -87,3 +87,33 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     display: none;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
